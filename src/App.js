@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Flat from './components/Flat';
 import FlatList from './components/FlatList';
 import flats from './data/flats';
 

@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   render() {
+    const { flat } = this.props;
     return (
-      <div class="card" style={{backgroundImage: "url('https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat3.jpg')"}}>
-        <div class="card-category">150 EUR</div>
+      <div class="card" style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(${flat.imageUrl})`}}>
+        <div class="card-category">{flat.price} {flat.priceCurrency}</div>
         <div class="card-description">
-          <h2>Super 60m2 in trendy neighborhood!</h2>
+          <h2>{flat.name}</h2>
         </div>
         <a class="card-link" href="#"></a>
       </div>
