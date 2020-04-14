@@ -14,7 +14,7 @@ function App() {
         <FlatList flats={flats_imported} />
       </div>
       <div className="right-scene">
-
+        <SimpleMap />
       </div>
     </div>
   );
