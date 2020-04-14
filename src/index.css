@@ -53,6 +53,10 @@ body {
     border: 10px solid red;
   }
 }
+
+.red-border {
+  border: 4px red solid;
+}
 .card-user {
   position: absolute;
   right: 10px;
