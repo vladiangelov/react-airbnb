@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import FlatList from './components/FlatList';
 import flats from './data/flats';
+import SimpleMap from './components/SimpleMap';
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
       <div className="left-scene">
         <FlatList flats={flats_imported} />
       </div>
-      <div className="right-scene"></div>
+      <div className="right-scene">
+        <SimpleMap />
+      </div>
     </div>
   );
 }
