@@ -1,24 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Flat from './components/Flat';
+import FlatList from './components/FlatList';
+import flats from './data/flats';
 
 function App() {
+
+  const flats_imported = flats;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="left-scene">
+        <FlatList flats={flats_imported} />
+      </div>
+      <div className="right-scene"></div>
     </div>
   );
 }
