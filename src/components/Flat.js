@@ -10,12 +10,12 @@ class Flat extends Component {
   }
 
   changeColor = () => {
-    this.setState({clicked: !this.state.clicked})
+    this.props.activeFlat(this.props.flat.name);
   }
 
   render() {
     const { flat } = this.props;
-    let btn_class = this.state.clicked ? "card red-border" : "card";
+    let btn_class = this.props.activeFlatName === this.props.flat.name ? "card red-border" : "card";
 
 
     return (
