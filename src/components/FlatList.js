@@ -3,12 +3,9 @@ import Flat from './Flat'
 
 
 class FlatList extends Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      activeFlatName: ""
-    }
+  state = {
+    activeFlatName: ""
   }
 
   activeFlat = (flat) => {
